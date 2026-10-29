@@ -22,6 +22,7 @@ def fast_yt_search(query, limit=5):
         'nocheckcertificate': True,
         'default_search': f'ytsearch{limit}',
         'skip_download': True,
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -59,6 +60,7 @@ def extract_audio_url(video_id):
         "quiet": True,
         "noplaylist": True,
         "nocheckcertificate": True,
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -134,6 +136,7 @@ def download_song():
         "nocheckcertificate": True,
         "quiet": True,
         "noplaylist": True,
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     os.makedirs('downloads', exist_ok=True)
     try:
