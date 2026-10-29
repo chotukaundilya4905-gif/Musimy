@@ -1,0 +1,5 @@
+flask
+yt-dlp
+requests
+gunicorn
+bgutil-ytdlp-pot-provider
